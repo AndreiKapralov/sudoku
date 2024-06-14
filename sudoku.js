@@ -1,23 +1,15 @@
-const fs = require('fs')
-
-
 function read() {
-const fs = require('fs')
-let file = fs.readFileSync('./puzzles.txt', 'utf-8');
-let newFormatForFile = file.split('\n')
-console.log(typeof([1,2]))
-return newFormatForFile
-
+  const fs = require("fs");
+  let file = fs.readFileSync("./puzzles.txt", "utf-8");
+  let newFormatForFile = file.split("\n");
+  return newFormatForFile[process.argv[2]];
 }
-
-read()
 
 function solve() {
-  /**
-   * Принимает игровое поле в том формате, в котором его вернули из функции read.
-   * Возвращает игровое поле после попытки его решить.
-   */
+  // let correctSudoku = [new Array(9).forEach((item)=> )];
+  // console.log(correctSudoku);
 }
+
 
 function isSolved() {
   /**
@@ -33,3 +25,7 @@ function prettyBoard() {
    * Подумай, как симпатичнее его вывести.
    */
 }
+
+
+console.log(solve())
+
