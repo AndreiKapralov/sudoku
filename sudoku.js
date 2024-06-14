@@ -1,16 +1,12 @@
-const fs = require('fs')
-
+const fs = require("fs");
 
 function read() {
-const fs = require('fs')
-let file = fs.readFileSync('./puzzles.txt', 'utf-8');
-let newFormatForFile = file.split('\n')
-console.log(typeof([1,2]))
-return newFormatForFile
-
+  const fs = require("fs");
+  let file = fs.readFileSync("./puzzles.txt", "utf-8");
+  let newFormatForFile = file.split("\n");
+  console.log(typeof [1, 2]);
+  return newFormatForFile;
 }
-
-read()
 
 function solve() {
   /**
