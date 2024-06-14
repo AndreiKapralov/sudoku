@@ -18,11 +18,7 @@ function read(num) {
   return number;
 }
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> e402fba37d9dc6ceea0f0b387521411ce0fd0759
 function solve() {
   const sudoku = read(1);
   for (let i = 0; i < sudoku.length; i++) {
