@@ -79,4 +79,4 @@ function prettyBoard(board) {
 
 const sudoku = solve();
 prettyBoard(sudoku);
-console.log(isSolved(sudoku));
+
